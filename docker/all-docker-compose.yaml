@@ -19,9 +19,9 @@ services:
       - DD_ENV=dev
       - DD_VERSION=0.0.1
       - DD_AGENT_HOST=datadog-agent
-      - CALENDAR_HOST=calendar
+      # - CALENDAR_HOST=calendar
     depends_on:
-      - calendar
+      # - calendar
       - datadog-agent
 
   calendar:
@@ -49,7 +49,7 @@ services:
     image: "gcr.io/datadoghq/agent:latest"
     pid: host
     environment:
-      - DD_API_KEY=<DD_API_KEY_HERE>
+      - DD_API_KEY=$DD_KEY
       - DD_APM_ENABLED=true
       - DD_APM_NON_LOCAL_TRAFFIC=true
     volumes:
