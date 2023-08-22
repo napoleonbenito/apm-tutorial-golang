@@ -17,7 +17,7 @@ services:
       - com.datadoghq.tags.version="0.0.1"
     environment:
       - DD_SERVICE=notes
-      - DD_ENV=dev
+      - DD_ENV=nappyLappy
       - DD_VERSION=0.0.1
       - DD_AGENT_HOST=host.docker.internal 
       - CALENDAR_HOST=calendar
@@ -38,6 +38,6 @@ services:
       - com.datadoghq.tags.version="0.0.1"
     environment:
       - DD_SERVICE=calendar
-      - DD_ENV=dev
+      - DD_ENV=nappyLappy
       - DD_VERSION=0.0.1
       - DD_AGENT_HOST=host.docker.internal
