@@ -19,9 +19,9 @@ services:
       - DD_ENV=nappyLappy
       - DD_VERSION=0.0.1
       - DD_AGENT_HOST=datadog-agent
-      # - CALENDAR_HOST=calendar
+      - CALENDAR_HOST=calendar
     depends_on:
-      # - calendar
+      - calendar
       - datadog-agent
 
   calendar:
