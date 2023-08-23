@@ -49,7 +49,7 @@ services:
     image: "gcr.io/datadoghq/agent:latest"
     pid: host
     environment:
-      - DD_API_KEY=$DD_KEY
+      - DD_API_KEY=$DD_API_KEY
       - DD_APM_ENABLED=true
       - DD_APM_NON_LOCAL_TRAFFIC=true
     volumes:
